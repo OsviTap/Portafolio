@@ -1,0 +1,37 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.js    text diff=javascript linguist-language=React
+*.jsx   text diff=javascript linguist-language=React
+*.ts    text diff=typescript linguist-language=React
+*.tsx   text diff=typescript linguist-language=React
+*.css   text diff=css linguist-language=React
+*.html  text diff=html
+*.json  text
+*.yml   text
+
+# Documentation
+*.md    text diff=markdown
+*.txt   text
+LICENSE text
+
+# Configs
+.env.example  text
+.gitattributes text
+.gitignore    text
+*.lock        text -diff
+package.json  text eol=lf
+*.config.js   text
+
+# Graphics
+*.ico  binary
+*.jpg  binary
+*.png  binary
+*.gif  binary
+*.svg  text
+
+# Ignore files (like npm packages, build files, etc.)
+node_modules/* linguist-vendored
+dist/* linguist-generated
+build/* linguist-generated 
