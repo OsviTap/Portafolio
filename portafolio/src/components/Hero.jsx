@@ -1,4 +1,5 @@
 import React from 'react';
+import fotoPerfil from '../assets/images/fotoPerfil.png';
 
 const Hero = () => {
   return (
@@ -8,9 +9,9 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Hola, soy <span className="text-highlight">Johan Orellana</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl mb-6 text-accent">Desarrollador Web & QA Manual</h2>
+          <h2 className="text-2xl md:text-3xl mb-6 text-accent">Desarrollador Web Full Stack & QA Manual</h2>
           <p className="text-lg mb-8 max-w-lg">
-            Creando soluciones digitales elegantes, funcionales y escalables para la web. Especializado en desarrollo frontend y testing de calidad.
+            Creando soluciones digitales elegantes, funcionales y escalables para la web. Especializado en desarrollo frontend, backend y testing de calidad.
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -87,10 +88,19 @@ const Hero = () => {
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-tertiary/40 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
             
-            {/* Imagen de perfil (placeholder) */}
-            <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-highlight relative z-10">
-              <div className="w-full h-full bg-gradient-to-br from-tertiary to-accent flex items-center justify-center text-white text-4xl font-bold">
-                JO
+            {/* Imagen de perfil con aura animada */}
+            <div className="relative">
+              {/* Aura animada */}
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-tertiary via-accent to-highlight opacity-75 blur-md animate-pulse z-0"></div>
+              <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-highlight via-tertiary to-accent opacity-50 blur-md animate-pulse-slow z-0"></div>
+              
+              {/* Imagen de perfil */}
+              <div className="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-highlight relative z-10">
+                <img 
+                  src={fotoPerfil} 
+                  alt="Johan Orellana" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             

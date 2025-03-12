@@ -30,7 +30,7 @@ const AboutMe = () => {
               <div className="bg-secondary/20 p-4 rounded-lg border border-tertiary/20">
                 <h3 className="text-xl font-semibold mb-2 text-highlight">Experiencia</h3>
                 <p>+3 años de experiencia</p>
-                <p className="text-sm text-gray-300">Desarrollo Web & QA</p>
+                <p className="text-sm text-gray-300">Desarrollo Web Full Stack & QA</p>
               </div>
             </div>
           </div>
@@ -66,6 +66,9 @@ const AboutMe = () => {
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2 text-highlight">✓</span> MongoDB
+                  </li>
+                  <li className="flex items-center">
+                    <span className="mr-2 text-highlight">✓</span> PostgreSQL
                   </li>
                   <li className="flex items-center">
                     <span className="mr-2 text-highlight">✓</span> MySQL

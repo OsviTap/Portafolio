@@ -13,6 +13,9 @@ export default {
         accent: "#53ba83",
         highlight: "#9fd86b",
       },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
     },
   },
   plugins: [],
